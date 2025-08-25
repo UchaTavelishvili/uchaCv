@@ -168,4 +168,49 @@
                 <div class="job-description">SDLC, STLC, Agile/Scrum, Test Case Design, Bug Reporting, API Testing, SQL</div>
             </div>
 
-            <div
+            <div class="education-item">
+                <div class="degree">Web Automation Testing</div> | <span class="institution">Quality Academy</span> | <span class="period">2023</span>
+                <div class="job-description">Selenium, UI Automation, Automated Testing Tools</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Bachelor of Arts in Business Administration</div> | <span class="institution">Georgian Technical University</span> | <span class="period">2011–2014</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">LANGUAGES</div>
+            <div class="languages">
+                Georgian (Native), English (Professional Working Proficiency), Russian (Basic)
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">PROFESSIONAL ATTRIBUTES</div>
+            <div class="attributes">
+                Detail-oriented, Analytical Thinker, Team Collaborator, Adaptable, Continuous Learner
+            </div>
+        </div>
+    </div>
+  <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  async function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF("p", "pt", "a4");
+
+    // HTML-ს PDF-ში გადაყვანა
+    await pdf.html(document.body, {
+      callback: function (doc) {
+        doc.save("Ucha_Tavelishvili_CV.pdf");
+      },
+      x: 10,
+      y: 10,
+      html2canvas: { scale: 0.6 } // ზომების გასწორება მობილურზე
+    });
+  }
+</script>
+
+</body>
+</html>
