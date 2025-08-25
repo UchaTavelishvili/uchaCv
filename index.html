@@ -192,16 +192,20 @@
             </div>
         </div>
     </div>
-  <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+ <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
 
+<!-- html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- jsPDF -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 <script>
   async function downloadPDF() {
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF("p", "pt", "a4");
 
-    // HTML-ს PDF-ში გადაყვანა
-    await pdf.html(document.body, {
+    await pdf.html(document.querySelector(".container"), {
       callback: function (doc) {
         doc.save("Ucha_Tavelishvili_CV.pdf");
       },
@@ -211,6 +215,6 @@
     });
   }
 </script>
-
 </body>
 </html>
+
