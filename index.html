@@ -174,8 +174,17 @@
             </div>
 
             <div class="education-item">
-                <div class="degree">Bachelor of Arts in Business Administration</div> | <span class="institution">Georgian Technical University</span> | <span class="period">2011–2014</span>
-            </div>
+  <div class="degree">Business Administration, Finances</div> | 
+  <span class="institution">Georgian Technical University</span> | 
+  <span class="period">2011 – 2014</span>
+</div>
+
+<div class="education-item">
+  <div class="degree">Business Administration, Finances</div> | 
+  <span class="institution">University of Georgia</span> | 
+  <span class="period">2010 – 2011</span>
+</div>
+
         </div>
 
         <div class="section">
@@ -194,20 +203,25 @@
     </div>
 <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
 
+<!-- html2pdf.js ბიბლიოთეკა უნდა იყოს დოკუმენტის ბოლოს, თქვენი script-ის წინ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 <script>
-  function downloadPDF() {
-    const element = document.querySelector(".container");
-    const opt = {
-      margin:       0.5,
-      filename:     'Ucha_Tavelishvili_CV.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2 },
-      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-    };
-    html2pdf().set(opt).from(element).save();
-  }
+function downloadPDF() {
+  const element = document.querySelector(".container");
+  const opt = {
+    margin:       0.5,
+    filename:     'Ucha_Tavelishvili_CV.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+  };
+  html2pdf().set(opt).from(element).save();
+}
 </script>
+
 </body>
 </html>
+
 
 
