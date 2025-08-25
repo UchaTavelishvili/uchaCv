@@ -192,29 +192,22 @@
             </div>
         </div>
     </div>
- <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
-
-<!-- html2canvas -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
-<!-- jsPDF -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<button class="download-btn" onclick="downloadPDF()">Download PDF</button>
 
 <script>
-  async function downloadPDF() {
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF("p", "pt", "a4");
-
-    await pdf.html(document.querySelector(".container"), {
-      callback: function (doc) {
-        doc.save("Ucha_Tavelishvili_CV.pdf");
-      },
-      x: 10,
-      y: 10,
-      html2canvas: { scale: 0.6 } // ზომების გასწორება მობილურზე
-    });
+  function downloadPDF() {
+    const element = document.querySelector(".container");
+    const opt = {
+      margin:       0.5,
+      filename:     'Ucha_Tavelishvili_CV.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(element).save();
   }
 </script>
 </body>
 </html>
+
 
