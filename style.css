@@ -211,7 +211,7 @@
             margin: 20px 0;
         }
         
-        .download-btn {
+        .print-btn {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -224,7 +224,7 @@
             transition: background-color 0.3s;
         }
 
-        .download-btn:hover {
+        .print-btn:hover {
             background-color: #2980b9;
         }
 
@@ -339,8 +339,8 @@
             hr {
                 margin: 12px 0 !important;
             }
-
-            .download-btn {
+ 
+            .print-btn {
                 display: none !important;
             }
 
