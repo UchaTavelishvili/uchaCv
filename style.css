@@ -331,14 +331,14 @@ html[lang="ka"] .skill-label {
     }
 
     .section {
-        break-inside: auto;
-        page-break-inside: auto;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
         margin-bottom: 16px !important;
     }
 
     .section-title {
-        break-after: avoid;
-        page-break-after: avoid;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
         font-size: 13px !important;
         margin-bottom: 8px !important;
         padding-bottom: 2px !important;
@@ -349,6 +349,8 @@ html[lang="ka"] .skill-label {
     }
 
     .job {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
         margin-bottom: 14px !important;
     }
 
@@ -380,6 +382,8 @@ html[lang="ka"] .skill-label {
     }
 
     .education-item {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
         margin-bottom: 8px !important;
     }
 
@@ -389,6 +393,23 @@ html[lang="ka"] .skill-label {
 
     hr {
         margin: 12px 0 !important;
+    }
+
+    /* ქართული ვერსიისთვის ოდნავ მჭიდრო დაშორებები, რომ 2 გვერდზე დაეტიოს */
+    html[lang="ka"] body {
+        line-height: 1.25 !important;
+    }
+
+    html[lang="ka"] .section {
+        margin-bottom: 12px !important;
+    }
+
+    html[lang="ka"] .job {
+        margin-bottom: 10px !important;
+    }
+
+    html[lang="ka"] hr {
+        margin: 10px 0 !important;
     }
 
     /* ღილაკი და ენის გადამრთველი პრინტზე არ ჩანს */
@@ -403,24 +424,16 @@ html[lang="ka"] .skill-label {
         text-decoration: underline !important;
     }
 
-    /* გვერდის გაწყვეტის პრევენცია */
-    .section {
-        page-break-inside: avoid;
-    }
-
-    .job {
-        page-break-inside: avoid;
-    }
-
     /* A4 ზომა */
     @page {
         size: A4;
-        margin: 1.2cm !important;
+        margin: 1.1cm !important;
     }
 
-    /* ფონტის ოპტიმიზაცია პრინტისთვის */
+    /* ფერების შენარჩუნება პრინტისთვის */
     * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
 }
+
