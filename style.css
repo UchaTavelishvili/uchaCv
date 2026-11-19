@@ -359,6 +359,8 @@ html[lang="ka"] .skill-label {
     }
 
     .job-title {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
         font-size: 12px !important;
     }
 
