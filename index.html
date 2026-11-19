@@ -8,10 +8,11 @@
 </head>
 <body>
   <div class="lang-switch" data-no-print="true">
-  <svg class="globe" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.95a15.6 15.6 0 00-1.38-3.56A8.03 8.03 0 0118.9 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a8.2 8.2 0 010-4h3.38a16.5 16.5 0 000 4H4.26zm.84 2h2.95c.32 1.25.78 2.45 1.38 3.56A8.03 8.03 0 015.1 16zM8.05 8H5.1a8.03 8.03 0 014.33-3.56C8.83 5.55 8.37 6.75 8.05 8zM12 19.96A14.7 14.7 0 0110.09 16h3.82A14.7 14.7 0 0112 19.96zM14.34 14H9.66a14.7 14.7 0 010-4h4.68a14.7 14.7 0 010 4zm.23 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14a16.5 16.5 0 000-4h3.38a8.2 8.2 0 010 4h-3.38z"/></svg>
-  <button type="button" data-lang="en" class="active">EN</button>
-  <button type="button" data-lang="ka">ქარ</button>
-</div>
+    <svg class="globe" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.95a15.6 15.6 0 00-1.38-3.56A8.03 8.03 0 0118.9 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a8.2 8.2 0 010-4h3.38a16.5 16.5 0 000 4H4.26zm.84 2h2.95c.32 1.25.78 2.45 1.38 3.56A8.03 8.03 0 015.1 16zM8.05 8H5.1a8.03 8.03 0 014.33-3.56C8.83 5.55 8.37 6.75 8.05 8zM12 19.96A14.7 14.7 0 0110.09 16h3.82A14.7 14.7 0 0112 19.96zM14.34 14H9.66a14.7 14.7 0 010-4h4.68a14.7 14.7 0 010 4zm.23 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14a16.5 16.5 0 000-4h3.38a8.2 8.2 0 010 4h-3.38z"/></svg>
+    <button type="button" data-lang="en" class="active">EN</button>
+    <button type="button" data-lang="ka">ქარ</button>
+  </div>
+
     <div class="container">
         <div class="header">
             <div class="name">UCHA TAVELISHVILI</div>
@@ -98,7 +99,7 @@
                     <li>Collaborated closely with developers and product stakeholders</li>
                 </ul>
             </div>
-            <!-- End Tineti experience -->
+            <!-- End TNET experience -->
 
             <div class="job">
                 <div class="job-header">
@@ -226,16 +227,114 @@
     </div>
 
     <!-- Print / Save as PDF Button -->
-<button class="print-btn" data-no-print="true" onclick="printCV()">Print / Save as PDF</button>
+    <button class="print-btn" data-no-print="true" onclick="printCV()">Print / Save as PDF</button>
 
     <script>
-      function printCV() {
-        window.print();
+      function printCV() { window.print(); }
+
+      const KA = {
+        "UCHA TAVELISHVILI": "უჩა თაველიშვილი",
+        "Manual QA Engineer": "ხელით ტესტირების QA ინჟინერი",
+        "Tbilisi, Georgia": "თბილისი, საქართველო",
+        "PROFESSIONAL SUMMARY": "პროფესიული რეზიუმე",
+        "Results-driven Manual QA Engineer with 4+ years of specialized experience in banking technology. Expert in testing complex banking systems, mobile applications, and API integrations. Currently leading comprehensive testing initiatives across multiple development teams.":
+          "შედეგზე ორიენტირებული ხელით ტესტირების QA ინჟინერი, საბანკო ტექნოლოგიებში 4+ წლიანი სპეციალიზებული გამოცდილებით. გამოცდილი რთული საბანკო სისტემების, მობილური აპლიკაციებისა და API ინტეგრაციების ტესტირებაში. ამჟამად ვხელმძღვანელობ ყოვლისმომცველ სატესტო ინიციატივებს რამდენიმე დეველოპმენტ გუნდში.",
+        "Core Strengths: Banking domain expertise • End-to-end testing • Multi-team coordination • SQL data validation":
+          "ძირითადი ძლიერი მხარეები: საბანკო დომენის ექსპერტიზა • End-to-end ტესტირება • მრავალი გუნდის კოორდინაცია • SQL მონაცემთა ვალიდაცია",
+        "TECHNICAL SKILLS": "ტექნიკური უნარები",
+        "Testing:": "ტესტირება:",
+        "Tools:": "ინსტრუმენტები:",
+        "Methods:": "მეთოდები:",
+        "Platforms:": "პლატფორმები:",
+        "Functional, Regression, Smoke, Cross-browser, Responsive UI, API (REST/GraphQL), Integration, System":
+          "ფუნქციური, რეგრესიული, Smoke, Cross-browser, Responsive UI, API (REST/GraphQL), ინტეგრაციული, სისტემური",
+        "ISTQB-aligned (BVA, EP, Decision Tables, State Transition), Exploratory Testing":
+          "ISTQB-ზე ორიენტირებული (BVA, EP, Decision Tables, State Transition), კვლევითი ტესტირება",
+        "Web Applications, iOS/Android, BrowserStack, Agile/Scrum environments":
+          "ვებ აპლიკაციები, iOS/Android, BrowserStack, Agile/Scrum გარემო",
+        "PROFESSIONAL EXPERIENCE": "პროფესიული გამოცდილება",
+        "Nov 2025 – Present": "ნოემბერი 2025 – დღემდე",
+        "Performed manual testing of web-based systems and internal tools": "ვებ-სისტემებისა და შიდა ინსტრუმენტების ხელით ტესტირება",
+        "Designed and executed test cases based on business requirements": "ბიზნეს მოთხოვნებზე დაფუძნებული ტესტ-ქეისების შექმნა და შესრულება",
+        "Conducted API testing and validated responses and error handling": "API ტესტირება, პასუხებისა და შეცდომების დამუშავების ვალიდაცია",
+        "Reported bugs with clear reproduction steps and expected results": "ბაგების რეპორტინგი რეპროდუქციის მკაფიო ნაბიჯებითა და მოსალოდნელი შედეგით",
+        "Collaborated closely with developers and product stakeholders": "მჭიდრო თანამშრომლობა დეველოპერებთან და პროდუქტის დაინტერესებულ მხარეებთან",
+        "Analyze business requirements and create comprehensive test strategies": "ბიზნეს მოთხოვნების ანალიზი და ყოვლისმომცველი სატესტო სტრატეგიების შექმნა",
+        "Design structured test cases using BVA, EP, and Decision Tables methodologies": "სტრუქტურირებული ტესტ-ქეისების შედგენა BVA, EP და Decision Tables მეთოდოლოგიებით",
+        "Execute end-to-end testing across web, mobile (iOS/Android), and responsive UI platforms": "End-to-end ტესტირება ვებ, მობილურ (iOS/Android) და Responsive UI პლატფორმებზე",
+        "Perform REST API testing via Postman, Swagger, and GraphQL": "REST API ტესტირება Postman-ის, Swagger-ისა და GraphQL-ის გამოყენებით",
+        "Validate backend data integrity using SQL queries on core banking systems": "ბექენდის მონაცემთა მთლიანობის ვალიდაცია SQL მოთხოვნებით ძირითად საბანკო სისტემებში",
+        "Monitor backend/API logs using Seq for issue identification": "ბექენდისა და API ლოგების მონიტორინგი Seq-ით პრობლემების გამოსავლენად",
+        "Track defects through Jira with detailed reproduction steps": "დეფექტების თრექინგი Jira-ში რეპროდუქციის დეტალური ნაბიჯებით",
+        "Oversee testing activities across multiple feature teams for complete application coverage": "ტესტირების პროცესის კოორდინაცია რამდენიმე ფიჩერ-გუნდში აპლიკაციის სრული დაფარვისთვის",
+        "Focus Areas: Customer onboarding & KYC, account management, transactions, loans, payment processing, API integration validation":
+          "ფოკუსის მიმართულებები: კლიენტის ონბორდინგი და KYC, ანგარიშების მართვა, ტრანზაქციები, სესხები, გადახდების დამუშავება, API ინტეგრაციის ვალიდაცია",
+        "Successfully executed comprehensive testing during platform redesign/migration": "პლატფორმის რედიზაინისა და მიგრაციის დროს ყოვლისმომცველი ტესტირების წარმატებით შესრულება",
+        "Implemented backend and integration testing protocols using Kibana and SOAP tools": "ბექენდისა და ინტეგრაციული ტესტირების პროცედურების დანერგვა Kibana-სა და SOAP ინსტრუმენტებით",
+        "Established data consistency validation processes between systems": "სისტემებს შორის მონაცემთა თანმიმდევრულობის ვალიდაციის პროცესების ჩამოყალიბება",
+        "Developed exploratory testing strategies for edge cases and usability issues": "კვლევითი ტესტირების სტრატეგიების შემუშავება ზღვრული შემთხვევებისა და გამოყენებადობის პრობლემებისთვის",
+        "Enhanced team collaboration within Agile development framework": "გუნდური თანამშრომლობის გაუმჯობესება Agile დეველოპმენტის ფარგლებში",
+        "Impact: Supported successful migration of digital banking platforms with seamless user experience":
+          "შედეგი: ციფრული საბანკო პლატფორმების წარმატებული მიგრაციის მხარდაჭერა მომხმარებლისთვის შეუფერხებელი გამოცდილებით",
+        "Chief Accountant": "მთავარი ბუღალტერი",
+        "Diabetico (Retailer & Distributor)": "Diabetico (საცალო და სადისტრიბუციო კომპანია)",
+        "CaucasInterService (Freight Forwarding)": "CaucasInterService (სატვირთო გადაზიდვები)",
+        "Financial background providing valuable insight into business processes and regulatory compliance":
+          "ფინანსური გამოცდილება, რომელიც იძლევა ღირებულ წარმოდგენას ბიზნეს პროცესებსა და რეგულაციების დაცვაზე",
+        "PROJECTS": "პროექტები",
+        "QA Manual Tester (Freelance Project)": "ხელით ტესტერი (ფრილანს პროექტი)",
+        "Wandero.ai – AI Travel Assistant": "Wandero.ai – AI სამოგზაურო ასისტენტი",
+        "Tested AI-driven travel planning platform (web dashboard + user request flow)": "AI-ზე დაფუძნებული სამოგზაურო დაგეგმვის პლატფორმის ტესტირება (ვებ დეშბორდი + მომხმარებლის მოთხოვნის ნაკადი)",
+        "Designed and executed detailed test cases for request collection, itinerary generation, and invoice confirmation": "დეტალური ტესტ-ქეისების შედგენა და შესრულება მოთხოვნის შეგროვების, მარშრუტის გენერაციისა და ინვოისის დადასტურებისთვის",
+        "Identified and reported defects in email automation, request forms, and system integrations": "დეფექტების გამოვლენა და დაფიქსირება ელფოსტის ავტომატიზაციაში, მოთხოვნის ფორმებსა და სისტემურ ინტეგრაციებში",
+        "Collaborated with developers to improve platform quality and reliability": "დეველოპერებთან თანამშრომლობა პლატფორმის ხარისხისა და საიმედოობის გასაუმჯობესებლად",
+        "EDUCATION & CERTIFICATIONS": "განათლება და სერტიფიკატები",
+        "Software Testing Certificate": "პროგრამული უზრუნველყოფის ტესტირების სერტიფიკატი",
+        "SDLC, STLC, Agile/Scrum, Test Case Design, Bug Reporting, API Testing, SQL": "SDLC, STLC, Agile/Scrum, ტესტ-ქეისების დიზაინი, ბაგ-რეპორტინგი, API ტესტირება, SQL",
+        "Web Automation Testing": "ვებ ავტომატიზაციური ტესტირება",
+        "Selenium, UI Automation, Automated Testing Tools": "Selenium, UI ავტომატიზაცია, ავტომატური ტესტირების ინსტრუმენტები",
+        "Business Administration, Finances": "ბიზნესის ადმინისტრირება, ფინანსები",
+        "Georgian Technical University": "საქართველოს ტექნიკური უნივერსიტეტი",
+        "University of Georgia": "საქართველოს უნივერსიტეტი",
+        "LANGUAGES": "ენები",
+        "Georgian (Native), English (Professional Working Proficiency), Russian (Basic)": "ქართული (მშობლიური), ინგლისური (პროფესიული სამუშაო დონე), რუსული (საბაზისო)",
+        "PROFESSIONAL ATTRIBUTES": "პროფესიული თვისებები",
+        "Detail-oriented, Analytical Thinker, Team Collaborator, Adaptable, Continuous Learner": "დეტალებზე ორიენტირებული, ანალიტიკური აზროვნება, გუნდური მუშაობის უნარი, ადაპტირებადი, მუდმივად მოსწავლე",
+        "Print / Save as PDF": "ბეჭდვა / PDF-ად შენახვა"
+      };
+
+      const norm = s => s.replace(/\s+/g, ' ').trim();
+      const items = [];
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode()) {
+        const n = walker.currentNode;
+        if (n.parentElement.closest('script,style')) continue;
+        const key = norm(n.nodeValue);
+        if (KA[key]) items.push({ node: n, orig: n.nodeValue, key });
       }
+
+      function setLang(lang) {
+        items.forEach(({ node, orig, key }) => {
+          if (lang === 'ka') {
+            const lead = orig.match(/^\s*/)[0], trail = orig.match(/\s*$/)[0];
+            node.nodeValue = lead + KA[key] + trail;
+          } else {
+            node.nodeValue = orig;
+          }
+        });
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.lang-switch button').forEach(b =>
+          b.classList.toggle('active', b.dataset.lang === lang));
+        try { localStorage.setItem('cvLang', lang); } catch (e) {}
+      }
+
+      document.querySelectorAll('.lang-switch button').forEach(b =>
+        b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+      let saved = 'en';
+      try { saved = localStorage.getItem('cvLang') || 'en'; } catch (e) {}
+      setLang(saved);
     </script>
 
 </body>
 </html>
-
-
-
