@@ -369,4 +369,38 @@
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }
+                .lang-switch {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  padding: 6px 8px;
+  border-radius: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  z-index: 100;
+}
+.lang-switch .globe { width: 18px; height: 18px; color: #3498db; margin-right: 2px; }
+.lang-switch button {
+  border: none;
+  background: transparent;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+.lang-switch button.active { background: #3498db; color: #fff; }
+
+/* ქართულისთვის */
+html[lang="ka"] .section-title { text-transform: none; }
+html[lang="ka"] .skill-label { min-width: 120px; }
+
+/* პრინტისას გადამრთველი არ ჩანს */
+@media print {
+  .lang-switch { display: none !important; }
+}
         }
